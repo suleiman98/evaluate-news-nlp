@@ -1,0 +1,100 @@
+main {
+  width: 80%;
+  margin: auto;
+}
+
+section:first-child {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 735px) {
+  form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 516px) {
+  form {
+    width: 100%;
+  }
+}
+
+form #url {
+  margin-bottom: 1rem;
+}
+
+form #submit {
+  cursor: pointer;
+  background: lightcoral;
+  color: #fff;
+}
+
+form #submit:hover {
+  background: rgb(231, 126, 126);
+}
+
+form #url,
+form #submit {
+  font-family: inherit;
+  padding: 0.5rem;
+  font-size: inherit;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 100%;
+  border-radius: 3px;
+}
+
+section:last-child {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 16rem;
+  padding: 0.6rem;
+  margin: 1rem;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  text-align: center;
+  background: #fff;
+  border-radius: 3px;
+}
+
+article #title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+article #img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16rem;
+  // background: lightcoral;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  background-image: url(../assets/Collatz.jpg);
+  background-size: cover;
+}
+
+article img {
+  transition: all ease 500ms;
+}
+
+article img:hover {
+  transform: scale(1.25);
+  opacity: 0.7;
+}
+
+article #data {
+  font-size: 80%;
+}

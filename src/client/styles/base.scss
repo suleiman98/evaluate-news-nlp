@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after,
+body {
+  box-sizing: inherit;
+}
+
+body,
+header,
+h1,
+main,
+section,
+form,
+article,
+footer,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  gap: 2rem;
+  font-family: "Baloo Chettan 2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  color: #171927;
+  background: #eee;
+  background-image: url(../assets/Collatz.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 735px) {
+  body {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluate News NLP</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sentiment Analysis</h1>
+    </header>
+    <main>
+      <section>
+        <form onsubmit="return Client.handleSubmit(event)">
+          <input type="text" id="url" placeholder="http://" />
+          <input
+            type="submit"
+            id="submit"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return Client.handleSubmit(event)"
+          />
+        </form>
+      </section>
+      <section>
+        <article>
+          <h1 id="score"></h1>
+          <div id="img"></div>
+          <div id="subjectivity"></div>
+          <div id="confidence"></div>
+          <div id="irony"></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3>@Copyright Suleiman Mustapha</h3>
+    </footer>
+  </body>
+</html>
