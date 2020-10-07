@@ -56,4 +56,4 @@ const score = (score_tag) => {
   }
 };
 
-export { handleSubmit };
+export { handleSubmit, score };
