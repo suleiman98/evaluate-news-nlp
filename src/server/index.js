@@ -39,5 +39,5 @@ app.post("/article", async (req, res) => {
 });
 
 app.listen(8090, () => {
-  console.log(`app running at http://localhost:8090`);
+  console.log(`app running at http://localhost:8080`);
 });

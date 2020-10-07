@@ -9,7 +9,7 @@ function handleSubmit(event) {
   if (checkForUrl(formText)) {
     console.log("valid url");
 
-    fetch("http://localhost:8090/article", {
+    fetch("http://localhost:8080/article", {
       method: "POST",
       cache: "no-cache",
       credentials: "same-origin",
